@@ -13,6 +13,7 @@ header {
     padding: 20px 50px;
 
     display: flex;
+    align-items: cneter;
     align-items: center;
     justify-content: space-between;
 }
@@ -51,7 +52,7 @@ nav a {
 
 .banner::before {
     content: "🌸  ✦  ♡  ✧  🌼";
-    
+
     position: absolute;
     top: 50px;
     left: 0;
@@ -141,6 +142,8 @@ img {
     margin: 0 auto;
 }
 
+.banner img
+banner.categorias {
 .banner img {
     display: block;
     margin: 0 auto;
@@ -2079,90 +2082,64 @@ footer {
     }
 
 
-      /* CARROSSEL - OS MAIS PEDIDOS */
-.mais-pedidos .produtos-container {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    gap: 20px !important;
-    padding: 10px 20px 30px !important;
-}
-
-.mais-pedidos .produtos-container .produto {
-    flex: 0 0 82vw !important;
-    width: 82vw !important;
-    max-width: 330px !important;
-}
     /* ========================================
-   OS MAIS PEDIDOS - CORREÇÃO FINAL
-======================================== */
+       OS MAIS PEDIDOS
+       CARROSSEL
+    ======================================== */
 
-.mais-pedidos {
-    display: block !important;
-    visibility: visible !important;
-    width: 100% !important;
-    height: auto !important;
-    min-height: 400px !important;
-    overflow: visible !important;
-    padding: 50px 0 !important;
-}
+    .mais-pedidos {
+        width: 100%;
+        overflow: hidden;
 
-.mais-pedidos h2 {
-    display: block !important;
-    visibility: visible !important;
-    margin-bottom: 25px !important;
-}
-
-.mais-pedidos .produtos-container {
-    display: flex !important;
-    visibility: visible !important;
-
-    width: 100% !important;
-    height: auto !important;
-    min-height: 300px !important;
-
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-
-    gap: 20px !important;
-
-    padding: 10px 20px 30px !important;
-
-    -webkit-overflow-scrolling: touch !important;
-}
-
-.mais-pedidos .produto {
-    display: block !important;
-    visibility: visible !important;
-
-    flex: 0 0 82vw !important;
-
-    width: 82vw !important;
-    max-width: 330px !important;
-
-    height: auto !important;
-    min-height: 0 !important;
-
-    margin: 0 !important;
-}
-
-.mais-pedidos .produto img {
-    display: block !important;
-    visibility: visible !important;
-
-    width: 100% !important;
-    height: auto !important;
-
-    max-width: 100% !important;
-
-    object-fit: contain !important;
-}
+        padding: 50px 0;
     }
+
+    .mais-pedidos h2 {
+        font-size: 30px;
+
+        text-align: center;
+
+        padding: 0 15px;
+    }
+
+    .produtos-container {
+        width: 100%;
+
+        display: flex;
+
+        flex-wrap: nowrap;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        gap: 20px;
+
+        padding: 10px 20px 25px;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .produtos-container .produto {
+        flex: 0 0 82vw;
+
+        width: 82vw;
+
+        max-width: 330px;
+
+        min-width: 0;
+    }
+
+    .produtos-container .produto img {
+        width: 100%;
+        height: auto;
+
+        aspect-ratio: 1 / 1;
+
+        object-fit: contain;
+
+        display: block;
+    }
+
 
     /* ========================================
        AINDA NÃO SE DECIDIU?
@@ -2580,23 +2557,6 @@ footer {
         display: block !important;
 
         border-radius: 20px;
-
-        /* CARROSSEL - OS MAIS PEDIDOS */
-.mais-pedidos .produtos-container {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    gap: 20px !important;
-    padding: 10px 20px 30px !important;
-}
-
-.mais-pedidos .produtos-container .produto {
-    flex: 0 0 82vw !important;
-    width: 82vw !important;
-    max-width: 330px !important;
-}
     }
 
 
@@ -2809,9 +2769,4 @@ footer {
     aspect-ratio:auto !important;
     object-fit:contain !important;
   }
-}
-
-/* ESCONDER BOTÃO VOLTAR SOMENTE NA PÁGINA INICIAL */
-body.pagina-inicial .voltar-produto {
-    display: none !important;
 }
