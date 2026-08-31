@@ -14,9 +14,9 @@ body {
 }
 
 body {
+    margin: 0;
     font-family: 'Quicksand', sans-serif;
-    background-color: #fff5f8;
-    color: #5a3d43;
+    background-color: rgb(241, 171, 204);
 }
 
 h1 {
