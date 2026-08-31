@@ -2135,6 +2135,90 @@ footer {
         object-fit: contain;
 
         display: block;
+
+                /* CARROSSEL - OS MAIS PEDIDOS */
+.mais-pedidos .produtos-container {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    gap: 20px !important;
+    padding: 10px 20px 30px !important;
+}
+
+.mais-pedidos .produtos-container .produto {
+    flex: 0 0 82vw !important;
+    width: 82vw !important;
+    max-width: 330px !important;
+}
+    /* ========================================
+   OS MAIS PEDIDOS - CORREÇÃO FINAL
+======================================== */
+
+.mais-pedidos {
+    display: block !important;
+    visibility: visible !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 400px !important;
+    overflow: visible !important;
+    padding: 50px 0 !important;
+}
+
+.mais-pedidos h2 {
+    display: block !important;
+    visibility: visible !important;
+    margin-bottom: 25px !important;
+}
+
+.mais-pedidos .produtos-container {
+    display: flex !important;
+    visibility: visible !important;
+
+    width: 100% !important;
+    height: auto !important;
+    min-height: 300px !important;
+
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+
+    gap: 20px !important;
+
+    padding: 10px 20px 30px !important;
+
+    -webkit-overflow-scrolling: touch !important;
+}
+
+.mais-pedidos .produto {
+    display: block !important;
+    visibility: visible !important;
+
+    flex: 0 0 82vw !important;
+
+    width: 82vw !important;
+    max-width: 330px !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+}
+
+.mais-pedidos .produto img {
+    display: block !important;
+    visibility: visible !important;
+
+    width: 100% !important;
+    height: auto !important;
+
+    max-width: 100% !important;
+
+    object-fit: contain !important;
+}
     }
 
 
