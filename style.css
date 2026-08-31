@@ -2126,7 +2126,7 @@ footer {
         min-width: 0;
     }
 
-    .produtos-container .produto img {
+        .produtos-container .produto img {
         width: 100%;
         height: auto;
 
@@ -2135,23 +2135,30 @@ footer {
         object-fit: contain;
 
         display: block;
+    }
 
-        /* CARROSSEL - OS MAIS PEDIDOS */
-.mais-pedidos .produtos-container {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    gap: 20px !important;
-    padding: 10px 20px 30px !important;
-}
 
-.mais-pedidos .produtos-container .produto {
-    flex: 0 0 82vw !important;
-    width: 82vw !important;
-    max-width: 330px !important;
-}
+    /* CARROSSEL - OS MAIS PEDIDOS */
+
+    .mais-pedidos .produtos-container {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+
+        gap: 20px !important;
+
+        padding: 10px 20px 30px !important;
+    }
+
+    .mais-pedidos .produtos-container .produto {
+        flex: 0 0 82vw !important;
+
+        width: 82vw !important;
+
+        max-width: 330px !important;
     }
 
 
