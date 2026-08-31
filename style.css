@@ -2080,146 +2080,127 @@ footer {
 
 
     /* ========================================
-       OS MAIS PEDIDOS
-       CARROSSEL
-    ======================================== */
+   OS MAIS PEDIDOS
+   CARROSSEL
+======================================== */
+
+.mais-pedidos {
+    width: 100%;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.mais-pedidos h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 0 15px;
+    margin-bottom: 25px;
+}
+
+.produtos-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    gap: 20px;
+
+    padding: 10px 20px 30px;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+.produtos-container .produto {
+    flex: 0 0 82vw;
+
+    width: 82vw;
+    max-width: 330px;
+
+    min-width: 0;
+
+    margin: 0;
+}
+
+.produtos-container .produto img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    max-width: 100%;
+
+    object-fit: contain;
+
+    border-radius: 20px;
+}
+
+
+/* ========================================
+   CELULAR
+======================================== */
+
+@media (max-width: 600px) {
 
     .mais-pedidos {
+        display: block;
         width: 100%;
+        height: auto;
         overflow: hidden;
-
         padding: 50px 0;
     }
 
     .mais-pedidos h2 {
+        display: block;
         font-size: 30px;
-
         text-align: center;
-
-        padding: 0 15px;
+        margin-bottom: 25px;
     }
 
-    .produtos-container {
-        width: 100%;
-
+    .mais-pedidos .produtos-container {
         display: flex;
-
+        flex-direction: row;
         flex-wrap: nowrap;
+
+        width: 100%;
+        height: auto;
 
         overflow-x: auto;
         overflow-y: hidden;
 
         gap: 20px;
 
-        padding: 10px 20px 25px;
-
-        -webkit-overflow-scrolling: touch;
+        padding: 10px 20px 30px;
     }
 
-    .produtos-container .produto {
+    .mais-pedidos .produto {
+        display: block;
+
         flex: 0 0 82vw;
 
         width: 82vw;
-
         max-width: 330px;
 
-        min-width: 0;
+        height: auto;
+        min-height: 0;
+
+        margin: 0;
     }
 
-    .produtos-container .produto img {
+    .mais-pedidos .produto img {
+        display: block;
+
         width: 100%;
         height: auto;
 
-        aspect-ratio: 1 / 1;
+        max-width: 100%;
 
         object-fit: contain;
-
-        display: block;
-
-                /* CARROSSEL - OS MAIS PEDIDOS */
-.mais-pedidos .produtos-container {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    gap: 20px !important;
-    padding: 10px 20px 30px !important;
-}
-
-.mais-pedidos .produtos-container .produto {
-    flex: 0 0 82vw !important;
-    width: 82vw !important;
-    max-width: 330px !important;
-}
-    /* ========================================
-   OS MAIS PEDIDOS - CORREÇÃO FINAL
-======================================== */
-
-.mais-pedidos {
-    display: block !important;
-    visibility: visible !important;
-    width: 100% !important;
-    height: auto !important;
-    min-height: 400px !important;
-    overflow: visible !important;
-    padding: 50px 0 !important;
-}
-
-.mais-pedidos h2 {
-    display: block !important;
-    visibility: visible !important;
-    margin-bottom: 25px !important;
-}
-
-.mais-pedidos .produtos-container {
-    display: flex !important;
-    visibility: visible !important;
-
-    width: 100% !important;
-    height: auto !important;
-    min-height: 300px !important;
-
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-
-    gap: 20px !important;
-
-    padding: 10px 20px 30px !important;
-
-    -webkit-overflow-scrolling: touch !important;
-}
-
-.mais-pedidos .produto {
-    display: block !important;
-    visibility: visible !important;
-
-    flex: 0 0 82vw !important;
-
-    width: 82vw !important;
-    max-width: 330px !important;
-
-    height: auto !important;
-    min-height: 0 !important;
-
-    margin: 0 !important;
-}
-
-.mais-pedidos .produto img {
-    display: block !important;
-    visibility: visible !important;
-
-    width: 100% !important;
-    height: auto !important;
-
-    max-width: 100% !important;
-
-    object-fit: contain !important;
-}
     }
+
+}
 
 
     /* ========================================
